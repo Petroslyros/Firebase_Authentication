@@ -49,12 +49,14 @@ class SignInActivity : AppCompatActivity() {
         }
     }
 
-    override fun onStart() {
-        super.onStart()
 
-        if(firebaseAuth.currentUser != null){
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-        }
-    }
+//IF A USER IS ALREADY SIGNED THIS SHOULD SIGN HIM IN THE APP IMMETEALY WITHOUT THE NEED OF CREDENTIALS
+//    override fun onStart() {
+//        super.onStart()
+//
+//        if(firebaseAuth.currentUser != null){
+//            val intent = Intent(this, MainActivity::class.java)
+//            startActivity(intent)
+//        }
+//    }
 }
